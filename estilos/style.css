@@ -1,0 +1,238 @@
+
+nav#navbar{
+    background-color: black;
+    margin-top: -10%;
+    padding: 1px;
+    position: fixed;
+    width: 100%;
+    margin-left: -1%;
+}
+
+nav#navbar a{
+    text-decoration: none;
+}
+.material-icons.md-light { 
+    color: rgba(255, 255, 255, 1); 
+}
+.material-icons{
+    margin-left: 30px;
+}
+.material-icons.md-48 { 
+    font-size: 38px;
+ }
+ .material-icons.md-48:hover{ 
+    font-size: 30px;
+    color: cadetblue;
+    
+ }
+ul#nav{
+    margin-left: 40%;
+}
+
+
+div#lanca{
+    margin-top: 10%;
+    background-color: rgb(13, 14, 13);
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#lanca div{
+    display: inline-block;
+    padding: 5%;
+    background: white;
+    background-image: url("../imagens/Sao_2012.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 9px;
+    background-size: 100%;
+    transition: 0s;
+    overflow: hidden;
+}
+
+
+
+#lanca div:hover{
+    
+    position: unset;
+    
+    background: white;
+    background-image: url("../imagens/Sao_2012.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 9px;
+    background-size: 100%;
+    transition: .5s;
+    transform: scale(1.5,1.5);
+    
+}
+
+#lanca div h1{
+    display: inline;
+    font-size: 20pt;
+    color: white;
+}
+
+input#menu{
+    margin-top: -10000px;
+    position: fixed;
+}
+label[for = "menu"]{
+    visibility: hidden;
+    margin: -1000px;
+    position: fixed;
+}
+
+div#my{
+    width: 35%;
+    margin-left: 10%;
+    background-color: black;
+}
+
+#my ul{
+    padding: 3%;
+    list-style: none;
+}
+
+#my li{
+    color: white;
+    font-size: 14pt;
+}
+
+#my sup{
+    color: red;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+
+    #lanca div{
+        display: inline-block;
+        padding: 10%;
+        background: white;
+        background-image: url("../imagens/Sao_2012.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: 0s;
+        
+    }
+
+    #lanca div h1{
+        display: inline;
+        font-size: 24pt;
+        color: white;
+    }
+
+    ul#nav{
+        transition: all 0s;
+        display: grid;
+        
+    }
+
+    nav#navbar{
+        background-color: rgba(0, 0, 0, 70%);
+        margin: -100px;
+        padding: 0px;
+        margin-bottom: auto;
+        visibility: hidden;
+        display: block;
+        height: 100%;
+    } 
+
+    input#menu{
+        margin-top: -10000px;
+        position: fixed;
+    }
+    label[for = "menu"]{
+        visibility: visible;
+        position: relative;
+        font-size: 50pt;
+        margin: 10px;
+        
+    }
+
+    label[for = "menu"] img{
+        width: 15%;
+        margin-bottom: -0px;
+    }
+
+
+    label[for = "menu"] img:hover{
+        transition: .5s;
+    }
+
+    
+
+    #menu:checked ~ #navbar{
+        background-color: rgba(0, 0, 0, 70%);
+        margin-left: -10px;
+        padding: 1px;
+        visibility: visible;
+        position: absolute;
+    }
+
+    div#lanca{
+        margin-top: -4%;
+        background-color: rgb(13, 14, 13);
+        padding: 5px;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .material-icons.md-light { 
+        color: rgba(255, 255, 255, 1); 
+    }
+    .material-icons{
+        margin-left: -5%;
+        margin-bottom: 5px;
+    }
+    .material-icons.md-48 { 
+        font-size: 50pt;
+     }
+     .material-icons.md-48:hover{ 
+        font-size: 52pt;
+        color: cadetblue;
+        
+     }
+    
+
+
+
+}
+@media screen and (max-width: 400px){
+
+    #lanca div{
+        display: inline-block;
+        padding: 6%;
+        background: white;
+        background-image: url("../imagens/Sao_2012.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: 0s;
+        
+    }
+
+
+    div#lanca{
+        margin-top: -4%;
+        background-color: rgb(13, 14, 13);
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+        margin-left: -2%;
+    }
+
+    div#my{
+        width: 45%;
+        margin-left: 0%;
+        background-color: black;
+    }
+
+}
